@@ -1,0 +1,26 @@
+[
+  {
+    "uid": 1,
+    "id": 1,
+    "title": "This is a sample Post",
+    "body": "This is the body of the sample post"
+  },
+  {
+    "uid": 1,
+    "id": 2,
+    "title": "What a beautiful day!",
+    "body": "The day has come for us to rejoice!"
+  },
+  {
+    "uid": 2,
+    "id": 3,
+    "title": "It is not Everyday!",
+    "body": "Sometimes, most of the times, things go south"
+  },
+  {
+    "uid": 2,
+    "id": 4,
+    "title": "Half-Baked",
+    "body": "An ounce of effort and a ton of patience!"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "postId": 1,
+    "id": 1,
+    "name": "Jibz Erns",
+    "email": "ernesto@jibz.biz",
+    "body": "Please dont!"
+  },
+  {
+    "postId": 1,
+    "id": 2,
+    "name": "Mikee Kee",
+    "email": "mikee@kee.com",
+    "body": "Might be a reply"
+  },
+  {
+    "postId": 2,
+    "id": 3,
+    "name": "Antonio Skultz",
+    "email": "skultz@ed.edu",
+    "body": "Basically not maybe"
+  },
+  {
+    "postId": 4,
+    "id": 4,
+    "name": "Mario Nuss",
+    "email": "marionuss@ent.org",
+    "body": "Thou shall not and not thou"
+  }
+]
