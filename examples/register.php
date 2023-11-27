@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $existingUser = searchEmail($email);
     if (!$existingUser) {
         $userData = [
-            "id" => generateUserId(),
+            "id" => generateId(getUsersData()),
             "name" => htmlspecialchars($_POST["name"]),
             "username" => htmlspecialchars($_POST["username"]),
             "email" => $email,

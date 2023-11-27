@@ -16,8 +16,8 @@ include_once("helper.php");
             </ul>
             <div class="text-end">
                 <?php
-                if (isset($_SESSION["user"])) {
-                    $userData = json_decode($_SESSION["user"], true);
+                global $userData;
+                if ($userData) {
                     echo '<span class="text-secondary me-2">Welcome ' . $userData["name"] . ' </span>
                         <a type="button" class="btn btn-danger" href="logout.php">Logout</a>';
                 } else {

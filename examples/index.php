@@ -17,7 +17,23 @@ include("helper.php");
     include("header.php");
     ?>
     <div class="container">
+
+
         <?php
+        if (isset($_SESSION["user"])) {
+            echo '<form action="new_post.php" method="post">
+                    <div class="mb-3">
+                        <label for="post-title" class="form-label">Post Title: </label>
+                        <input type="text" class="form-control" id="post-title" name="post-title"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="post-content" class="form-label">Post Content: </label>
+                        <textarea class="form-control" id="post-content" name="post-content" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Post</button>
+                </form>';
+        }
+
         echo getPosts();
         ?>
     </div>
