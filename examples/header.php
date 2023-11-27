@@ -11,11 +11,9 @@
         <li><a href="index.php" class="nav-link px-2 text-secondary">Home</a></li>
         <li><a href="#" class="nav-link px-2 text-white">Posts</a></li>
       </ul>
-
-
       <div class="text-end">
         <a type="button" class="btn btn-outline-light me-2" href="login.php">Login</a>
-        <a type="button" class="btn btn-warning">Sign-up</a>
+        <a type="button" class="btn btn-warning" href="register.php">Sign-up</a>
       </div>
     </div>
   </div>

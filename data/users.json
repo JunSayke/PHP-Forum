@@ -1,24 +1,46 @@
 [
-  {
-    "id": 1,
-    "name": "Mario Summ",
-    "username": "mariosumm",
-    "email": "mariosumm@gmail.com",
-    "address": {
-      "street": "Kahilakon",
-      "barangay": "Himi",
-      "city": "Crying Buds"
-      }
-  },
-  {
-    "id": 2,
-    "name": "Emily Laff",
-    "username": "emilylaff",
-    "email": "emilylaff@gmail.com",
-    "address": {
-      "street": "Muboon",
-      "barangay": "Putot",
-      "city": "Giants"
-      }
-  }
+	{
+		"id": 0,
+		"name": "",
+		"username": "",
+		"email": "",
+		"address": {
+			"street": "",
+			"barangay": "",
+			"city": ""
+		}
+	},
+	{
+		"id": 1,
+		"name": "Mario Summ",
+		"username": "mariosumm",
+		"email": "mariosumm@gmail.com",
+		"address": {
+			"street": "Kahilakon",
+			"barangay": "Himi",
+			"city": "Crying Buds"
+		}
+	},
+	{
+		"id": 2,
+		"name": "Emily Laff",
+		"username": "emilylaff",
+		"email": "emilylaff@gmail.com",
+		"address": {
+			"street": "Muboon",
+			"barangay": "Putot",
+			"city": "Giants"
+		}
+	},
+	{
+		"id": 3,
+		"name": "Antonio Ubaldo",
+		"username": "Hunyo",
+		"email": "antonio.junjr@gmail.com",
+		"address": {
+			"street": "Camalig",
+			"barangay": "Labangon",
+			"city": "Cebu City"
+		}
+	}
 ]

@@ -1,8 +1,8 @@
 <?php
 include("helper.php");
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $username = htmlspecialchars($_POST["username"]);
-    $existingUser = searchUserByUsername($username);
+    $email = htmlspecialchars($_POST["email"]);
+    $existingUser = searchEmail($email);
     if ($existingUser) {
         header("Location: index.php");
         exit();
@@ -30,8 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <div class="container">
         <form action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
             <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="username" name="username" placeholder="Username">
-                <label for="username">Username</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                <label for="email">Email</label>
             </div>
             <button type="submit" class="btn btn-primary">Login</button>
             <?php
