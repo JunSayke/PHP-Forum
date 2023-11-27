@@ -1,6 +1,4 @@
 <?php
-
-
 // users JSON
 $usersJSON = '../data/users.json';
 

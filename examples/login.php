@@ -1,9 +1,9 @@
 <?php
 include("helper.php");
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $email = htmlspecialchars($_POST["email"]);
-    $existingUser = searchEmail($email);
+    $existingUser = searchEmail(htmlspecialchars($_POST["email"]));
     if ($existingUser) {
+        login($existingUser);
         header("Location: index.php");
         exit();
     }

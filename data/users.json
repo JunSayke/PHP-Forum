@@ -42,5 +42,16 @@
 			"barangay": "Labangon",
 			"city": "Cebu City"
 		}
+	},
+	{
+		"id": 4,
+		"name": "Eren Yeager",
+		"username": "Freedom",
+		"email": "erenyeager@pardis.marley",
+		"address": {
+			"street": "St Maria",
+			"barangay": "Maria",
+			"city": "Wall Maria"
+		}
 	}
 ]

@@ -1,18 +1,22 @@
 <?php
 include("helper.php");
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $userData = [
-        "name" => htmlspecialchars($_POST["name"]),
-        "username" => htmlspecialchars($_POST["username"]),
-        "email" => htmlspecialchars($_POST["email"]),
-        "street" => htmlspecialchars($_POST["street"]),
-        "barangay" => htmlspecialchars($_POST["barangay"]),
-        "city" => htmlspecialchars($_POST["city"]),
-    ];
-    $existingUser = searchEmail($userData["email"]);
+    $email = htmlspecialchars($_POST["email"]);
+    $existingUser = searchEmail($email);
     if (!$existingUser) {
+        $userData = [
+            "id" => generateUserId(),
+            "name" => htmlspecialchars($_POST["name"]),
+            "username" => htmlspecialchars($_POST["username"]),
+            "email" => $email,
+            "address" => [
+                "street" => htmlspecialchars($_POST["street"]),
+                "barangay" => htmlspecialchars($_POST["barangay"]),
+                "city" => htmlspecialchars($_POST["city"])
+            ]
+        ];
         appendUser($userData);
-        header("Location: index.php");
+        header("Location: ?register_success");
         exit();
     }
     header("Location: ?register_error");
@@ -63,9 +67,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             </div>
             <button type="submit" class="btn btn-primary">Register</button>
             <?php
-            // Display an error message if login error parameter is present
-            if (isset($_GET['register_error'])) {
-                echo '<div class="alert alert-danger mt-3" role="alert">Registration failed. Email is already used.</div>';
+            if (isset($_GET["register_error"])) {
+                echo '<div class="alert alert-danger mt-3" role="alert">Registration failed! Email is already used by another user.</div>';
+            } elseif (isset($_GET["register_success"])) {
+                echo '<div class="alert alert-success mt-3" role="alert">Registration Success!</div>';
             }
             ?>
         </form>
